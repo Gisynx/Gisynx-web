@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GISYNX Mobile | Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Exact palette from your main GISYNX page */
+            --bg-deep: #02040a;
+            --primary-blue: #0077FF;
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-border: rgba(255, 255, 255, 0.08);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-deep);
+            /* Matches your main site's radial gradient */
+            background: radial-gradient(circle at 50% 50%, #001220 0%, #02040a 100%);
+            color: white;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .coming-soon-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            padding: 80px 40px;
+            border-radius: 40px;
+            backdrop-filter: blur(20px);
+            max-width: 600px;
+            width: 90%;
+            text-align: center; /* Centers all text elements */
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: clamp(2.5rem, 8vw, 4rem);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin-bottom: 20px;
+            /* Matches your main site title gradient */
+            background: linear-gradient(to bottom, #fff 40%, var(--primary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        p {
+            color: #888;
+            font-size: 1.1rem;
+            margin: 0 auto 50px;
+            max-width: 450px;
+            line-height: 1.6;
+        }
+
+        .btn-back {
+            background: var(--primary-blue);
+            color: white;
+            padding: 15px 40px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .btn-back:hover {
+            box-shadow: 0 0 30px rgba(0, 119, 255, 0.4);
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="coming-soon-card">
+        <h1>COMING<br>SOON</h1>
+        <p>GISYNX mobile integration is almost here. Syncing your road safety data for maximum alertness on the move.</p>
+        
+        <a href="index.html" class="btn-back">
+            Back to Home
+        </a>
+    </div>
+
+</body>
+</html>
